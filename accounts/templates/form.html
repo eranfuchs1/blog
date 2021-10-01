@@ -1,5 +1,17 @@
-<form action="{{action_url}}" method="{{method}}">
-{{form}}
-{% csrf_token %}
-<input type="submit" value="submit">
+<form action="{{action_url}}" method="{{method}}" id="form">
+    {% for field in form %}
+    <div>
+    <p class="label_tag">
+    {{ field.label_tag }}
+    </p>
+    <p>
+    {{ field }}
+    </p>
+    <div class="errors">
+    {{ field.errors }}
+    </div>
+    </div>
+    {% endfor %}
+    {% csrf_token %}
 </form>
+<button class="form_submit" onclick="form_submit('form');">SIGNUP</button>
