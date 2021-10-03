@@ -1,9 +1,11 @@
 <form action="{{action_url}}" method="{{method}}" id="form">
     {% for field in form %}
     <div>
+    {% comment %}
     <p class="label_tag">
     {{ field.label_tag }}
     </p>
+    {% endcomment %}
     <p>
     {{ field }}
     </p>
