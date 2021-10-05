@@ -18,13 +18,14 @@
         background-position: center;
     }
     p>input {
-        border-top-left-radius: 25px;
+        /* border-top-left-radius: 25px;
         border-top-right-radius: 5px;
         border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 25px;
+        border-bottom-right-radius: 25px; */
+        border-radius: 16px;
         padding: 7px 20px;
-        padding-left: 25px;
-        background-color: orange;
+        /* padding-left: 25px; */
+        background-color: rgb(84, 194, 185);
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         transition: ease-out 280ms;
         color: darkgreen;
@@ -37,6 +38,8 @@
         /* background-color: plum; */
     }
     p>input:focus {
+        /* border-radius: 0px; */
+        /* padding: 7px 25px; */
         /* background-color: plum; */
         /* border-top-left-radius: 10px;
         border-top-right-radius: 0px;
@@ -47,11 +50,11 @@
         animation-direction: normal;
         animation-fill-mode: both;
         animation-name: p_input_focus; */
-        border-top-left-radius: 7px;
+        /* border-top-left-radius: 7px;
         border-top-right-radius: 5px;
         border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 7px;
-        background-color: rgb(148, 167, 185);
+        border-bottom-right-radius: 7px; */
+        /* background-color: rgb(148, 167, 185); */
     }
     .form_submit {
         border-bottom-left-radius: 50px;
@@ -59,14 +62,19 @@
         padding: 30px 0px;
         width: 300px;
         height: 105px;
-        background-color: orange;
+        /* background-color: orange; */
+        background-color: rgb(84, 194, 185);
         font-weight: 500;
         font-size: 1.1em;
         font-family: cursive;
-        background-image: url('https://i.ytimg.com/vi/wPfF5mYYuVE/maxresdefault.jpg');
-        background-position: center;
+        /* background-image: url('https://i.ytimg.com/vi/wPfF5mYYuVE/maxresdefault.jpg'); */
+        /* background-position: center; */
     }
     .form_submit:hover {
+        /* background-color: plum; */
+        color: blue;
+    }
+    .form_submit:focus {
         /* background-color: plum; */
         color: blue;
     }
